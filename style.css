@@ -1,0 +1,102 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: system-ui;
+    color: white;
+}
+body{
+    height: 100vh;
+    background-color: #8338ec;
+}
+#start ,#restart{
+    padding: 5px 15px;
+    margin: 10px;
+    background-color: #ff006e;
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 7px;
+}
+.tic-tac-toe{
+    background-color: #3a86ff;
+    width: 600px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px 0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+fieldset{
+    border: none;
+}
+#playersInfos{
+    margin: 20px;
+    display: flex;
+    gap: 20PX;
+}
+#playersInfos div{
+    background-color: #8338ec;
+    padding: 20px 10px;
+    border-radius: 7px;
+    font-size: 20px;
+}
+#name1,#name2{
+    display: flex;
+}
+select , input,.confirm{
+    background-color: #ff006e;
+    border: none;
+    padding: 4px;
+    border-radius: 5px;
+    margin: 5px 0;
+    font-size: 16PX;
+}
+input{
+    padding-left: 7px;
+}
+select , .confirm{
+    padding: 6px 15px;
+    width: 100%;
+    font-weight: 700;
+}
+.mainGame{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.mainGame ,#restart{
+    display: none;
+}
+#player1InfosOutput,#player2InfosOutput{
+    background-color: #8338ec;
+    border-radius: 6px;
+    padding: 10px 5px;
+    width: 150px;
+    height: 120px;
+}
+#player1InfosOutput p,#player2InfosOutput p{
+    font-size: 20px;
+}
+#gameBoard{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 3PX;
+}
+#gameBoard div{
+    height: 60px;
+    width: 60px;
+    background-color: #ff006e;
+    border-radius: 6px;
+}
+.square{
+    font-size: 30px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
